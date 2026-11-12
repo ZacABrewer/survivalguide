@@ -678,6 +678,11 @@ def main():
     stats = {"written": sum(p["written"] for p in parts), "chapters": len(order),
              "figures": figures, "sources": sources}
     (OUT / "index.html").write_text(render_home(parts, stats), encoding="utf-8")
+    nf_body = ('<div class="page-head"><h1>Page not found</h1>'
+               '<p class="lede">That page isn\'t here. It may not be written yet, or the link is wrong.</p></div>'
+               '<p><a href="index.html">Go to the home page</a> or use the search box above.</p>')
+    (OUT / "404.html").write_text(layout(parts, title="Page not found", body=nf_body)
+                                   .replace("<head>", '<head>\n<base href="/">', 1), encoding="utf-8")
     (OUT / "assets" / "search-index.js").write_text(
         "window.SEARCH_INDEX=" + json.dumps(index, ensure_ascii=False, separators=(",", ":")) + ";", encoding="utf-8")
     files = list(OUT.rglob("*"))

@@ -24,6 +24,10 @@ Inside `source/`:
 
 Any static web server works. Point it at the `site/` folder.
 
+**Cloudflare (Workers Static Assets):** `wrangler.jsonc` in the repo root serves `./site` as a static Worker named `survivalguide`. In the Cloudflare dashboard, go to Workers & Pages → Create → Import a repository, pick this repo, and leave the build command empty with `npx wrangler deploy` as the deploy command. Every push to `main` then redeploys. Add the custom domain under the Worker's Settings → Domains & Routes.
+
+To update the site: run `python3 build.py`, commit the rebuilt `site/` folder, and push.
+
 **Docker (e.g., on a NAS):**
 
 ```bash

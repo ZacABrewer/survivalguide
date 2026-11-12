@@ -1,0 +1,12 @@
+{
+  // The Survival Guide — a static site served by Cloudflare Workers Static Assets.
+  // No Worker script: every request is answered from the files in ./site.
+  // Rebuild ./site with `python3 build.py`, commit, and push; Workers Builds deploys it.
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "survivalguide",
+  "compatibility_date": "2026-11-12",
+  "assets": {
+    "directory": "./site",
+    "not_found_handling": "404-page"
+  }
+}
