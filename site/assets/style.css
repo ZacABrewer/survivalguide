@@ -1,7 +1,7 @@
 /* The Survival Guide — field-manual reference site.
    Layout idea: a sidebar table of contents beside a single readable column, with signal red reserved for emergencies. */
 :root {
-  --paper: #f2f4f1;
+  --paper: #ffffff;
   --panel: #ffffff;
   --ink: #18211d;
   --muted: #56635c;
@@ -32,65 +32,6 @@
   --radius: 10px;
   --side-w: 300px;
   color-scheme: light;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --paper: #101512;
-    --panel: #171e1a;
-    --ink: #e3eae5;
-    --muted: #9daaa3;
-    --line: #2a342f;
-    --accent: #78c79f;
-    --accent-ink: #0c1912;
-    --accent-soft: #1a2c22;
-    --danger: #ff8b80;
-    --danger-ink: #2a0c0a;
-    --danger-soft: #3a1916;
-    --warn: #f1b851;
-    --warn-soft: #33270f;
-    --safe: #85cb88;
-    --safe-soft: #1a2b1c;
-    --info: #85bde4;
-    --info-soft: #14283a;
-    --violet: #c7a7ea;
-    --violet-soft: #2a2036;
-    --fill-soft: #232b27;
-    --fill-earth: #3b3127;
-    --fill-water: #1b3646;
-    --fill-plant: #1e3523;
-    --fill-fire: #713f1c;
-    --fill-skin: #4b392d;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --paper: #101512;
-  --panel: #171e1a;
-  --ink: #e3eae5;
-  --muted: #9daaa3;
-  --line: #2a342f;
-  --accent: #78c79f;
-  --accent-ink: #0c1912;
-  --accent-soft: #1a2c22;
-  --danger: #ff8b80;
-  --danger-ink: #2a0c0a;
-  --danger-soft: #3a1916;
-  --warn: #f1b851;
-  --warn-soft: #33270f;
-  --safe: #85cb88;
-  --safe-soft: #1a2b1c;
-  --info: #85bde4;
-  --info-soft: #14283a;
-  --violet: #c7a7ea;
-  --violet-soft: #2a2036;
-  --fill-soft: #232b27;
-  --fill-earth: #3b3127;
-  --fill-water: #1b3646;
-  --fill-plant: #1e3523;
-  --fill-fire: #713f1c;
-  --fill-skin: #4b392d;
-  color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
