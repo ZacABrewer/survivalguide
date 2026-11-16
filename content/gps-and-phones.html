@@ -1,0 +1,347 @@
+<p class="lede">A phone is a strong navigation tool, but only if you prepare it before you lose signal. This chapter explains how GPS works, how to download maps for offline use, how to share your position with rescuers, and how to stretch a battery in the cold. It also shows what to do when the phone fails, because sooner or later it can.</p>
+
+<section id="how-gps-works">
+  <h2 id="how-gps-works-h">How GPS Works, in Plain Words</h2>
+  <p>GPS is one of several satellite navigation systems. Together they are called GNSS (global navigation satellite systems). Others include Russia's GLONASS, Europe's Galileo, and China's BeiDou. Most modern phones can listen to more than one. A tutorial by Michael Minn says about 32 GPS satellites circle roughly 12,500 miles (20,000 km) up. Each one carries an atomic clock and broadcasts its position and the exact time it sent the signal. Other sources give slightly different satellite counts, because satellites are added and retired. The count does not change how you use the system.</p>
+  <p>Your phone only listens. It never sends anything to the satellites. It measures how long each signal took to arrive. Radio travels at the speed of light, so the delay turns into a distance. One distance puts you somewhere on a huge sphere around that satellite. Two distances narrow it to a circle. Three narrow it to a point or two. Minn says most receivers need at least four satellites, because the cheap clock in a receiver is far less exact than a satellite clock. The fourth signal lets the receiver fix its own clock error and solve for height.</p>
+  <figure class="illus">
+    <svg viewBox="0 0 640 400" role="img" aria-labelledby="gps-and-phones-fig1-title">
+      <title id="gps-and-phones-fig1-title">Simplified flat drawing of three satellites, each with an arc of equal distance, crossing at the receiver</title>
+      <rect x="95" y="62" width="30" height="16" class="fs s"/>
+      <rect x="305" y="42" width="30" height="16" class="fs s"/>
+      <rect x="515" y="82" width="30" height="16" class="fs s"/>
+      <text x="110" y="52" class="t sm c">Satellite A</text>
+      <text x="320" y="32" class="t sm c">Satellite B</text>
+      <text x="530" y="124" class="t sm c">Satellite C</text>
+      <path d="M374.2 261.8 A326.5 326.5 0 0 1 253.3 363.4" class="sa"/>
+      <path d="M385.3 312 A270 270 0 0 1 254.7 312" class="sa"/>
+      <path d="M381.9 364 A311.4 311.4 0 0 1 270.6 262.4" class="sa"/>
+      <line x1="110" y1="78" x2="316" y2="316" class="s2 dash"/>
+      <line x1="320" y1="58" x2="320" y2="314" class="s2 dash"/>
+      <line x1="530" y1="98" x2="324" y2="316" class="s2 dash"/>
+      <circle cx="320" cy="320" r="6" class="f"/>
+      <text x="340" y="342" class="t b">You are here</text>
+      <text x="40" y="200" class="t sm">Each dashed line is one</text>
+      <text x="40" y="216" class="t sm">measured distance.</text>
+      <text x="40" y="232" class="t sm">Where the arcs cross,</text>
+      <text x="40" y="248" class="t sm">that is your position.</text>
+      <text x="450" y="200" class="t sm">A fourth satellite fixes</text>
+      <text x="450" y="216" class="t sm">the phone's clock error</text>
+      <text x="450" y="232" class="t sm">and gives your height.</text>
+    </svg>
+    <figcaption><strong>Figure 1.</strong> Satellite ranging, simplified to a flat drawing with three satellites. Real GPS works in three dimensions and uses four or more satellites. Distances and sizes are not to scale.</figcaption>
+  </figure>
+  <h3>How accurate is it?</h3>
+  <p>GPS.gov, the US government's GPS site, says smartphones are typically accurate to about 16 feet (4.9 m) under open sky. Accuracy gets worse near buildings, bridges, and trees. GPS.gov lists the common causes of error: satellites bunched in one part of the sky, signals blocked by structures and plants, indoor or underground use, and signal bounces off surfaces (multipath). Less common causes include radio interference, jamming, and severe solar storms.</p>
+  <p>Two cautions from a CalTopo guide on phone accuracy. First, a long string of decimals does not mean a precise fix. Second, elevation from GPS is less reliable than the horizontal position. Do not trust it to the foot.</p>
+</section>
+
+<section id="no-signal">
+  <h2 id="no-signal-h">Why GPS Works Without Cell Signal, and What A-GPS Is</h2>
+  <p>The satellite signal is one-way and free. Your phone can find its position in a canyon with zero bars. The onX Maps blog puts it this way: the blue dot comes from satellites, not from your cell carrier. What you lose without signal is the map picture. Minn notes that any map an app shows comes from stored data or from a cell or Wi-Fi connection. That is why you download maps first.</p>
+  <p>A-GPS (assisted GPS) is a shortcut. Minn says phones can also estimate a location from cell-tower positions and nearby Wi-Fi networks. Android Central says A-GPS uses cell-tower data to speed up and steady the first fix, and reports that a plain satellite-only first fix can take up to about a minute. The tower and Wi-Fi methods are less exact than a strong satellite fix. Without a connection, expect a slower start. Give your phone a minute or two in the open before you trust it.</p>
+  <aside class="callout myth"><h4>Myth vs. fact</h4><p><strong>Myth:</strong> No bars means no GPS. <strong>Fact:</strong> Satellite positioning does not need a cell connection. Map tiles, searches, and live traffic do. Download your maps before you go.</p></aside>
+  <p>One more note on terms. GPS.gov points out that many "GPS errors" are really map errors, such as a mislabeled place or a wrong road. The satellites gave a good position. The map under it was wrong. Cross-check with the terrain around you.</p>
+</section>
+
+<section id="offline-maps">
+  <h2 id="offline-maps-h">Downloading Offline Maps</h2>
+  <p>Do this at home on Wi-Fi, not at the trailhead. Menus change with each update, so treat the steps below as a guide and then confirm on your own phone.</p>
+  <figure class="illus">
+    <svg viewBox="0 0 640 250" role="img" aria-labelledby="gps-and-phones-fig2-title">
+      <title id="gps-and-phones-fig2-title">Four-step flow: connect to Wi-Fi, find the offline maps option, choose and adjust the area, then test in airplane mode</title>
+      <defs>
+        <marker id="gps-and-phones-fig2-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0,0 L10,5 L0,10 z" class="f"/>
+        </marker>
+      </defs>
+      <rect x="10" y="40" width="130" height="150" rx="8" class="fs s"/>
+      <rect x="170" y="40" width="130" height="150" rx="8" class="fs s"/>
+      <rect x="330" y="40" width="130" height="150" rx="8" class="fs s"/>
+      <rect x="490" y="40" width="140" height="150" rx="8" class="fs s"/>
+      <line x1="140" y1="115" x2="168" y2="115" class="s" marker-end="url(#gps-and-phones-fig2-arrow)"/>
+      <line x1="300" y1="115" x2="328" y2="115" class="s" marker-end="url(#gps-and-phones-fig2-arrow)"/>
+      <line x1="460" y1="115" x2="488" y2="115" class="s" marker-end="url(#gps-and-phones-fig2-arrow)"/>
+      <text x="75" y="64" class="t b c">1. Prepare</text>
+      <text x="75" y="92" class="t sm c">Join Wi-Fi.</text>
+      <text x="75" y="110" class="t sm c">Sign in. Free</text>
+      <text x="75" y="128" class="t sm c">up storage.</text>
+      <text x="75" y="146" class="t sm c">Charge phone.</text>
+      <text x="235" y="64" class="t b c">2. Find it</text>
+      <text x="235" y="92" class="t sm c">Open your map</text>
+      <text x="235" y="110" class="t sm c">app. Look for</text>
+      <text x="235" y="128" class="t sm c">"Offline maps"</text>
+      <text x="235" y="146" class="t sm c">or "Download".</text>
+      <text x="395" y="64" class="t b c">3. Pick area</text>
+      <text x="395" y="92" class="t sm c">Cover your route</text>
+      <text x="395" y="110" class="t sm c">and a wide</text>
+      <text x="395" y="128" class="t sm c">margin. Tap</text>
+      <text x="395" y="146" class="t sm c">Download.</text>
+      <text x="560" y="64" class="t b c">4. Test</text>
+      <text x="560" y="92" class="t sm c">Turn on airplane</text>
+      <text x="560" y="110" class="t sm c">mode. Open the</text>
+      <text x="560" y="128" class="t sm c">map. Zoom around.</text>
+      <text x="560" y="146" class="t sm c">Does it load?</text>
+      <text x="320" y="224" class="t sm c">Recheck expiry dates and updates a week before every trip.</text>
+    </svg>
+    <figcaption><strong>Figure 2.</strong> The offline map routine in four steps. The exact menu names differ by app and version.</figcaption>
+  </figure>
+  <h3>Google Maps</h3>
+  <ol class="steps">
+    <li>Be online and signed in to Google Maps.</li>
+    <li>Search for a place. On Android, Google's help page says to swipe right on the place sheet, then open the More menu and pick the offline map option. You can also open Offline maps from your profile menu and choose a custom area.</li>
+    <li>Adjust the boundaries so the whole route fits inside the box.</li>
+    <li>Download. In Offline maps, review the download preferences for mobile data and battery. (Google's page I checked covered only Android. On iPhone, look for the same Offline maps entry under your profile picture.)</li>
+  </ol>
+  <p>Google says offline maps expire, so update them before they do. If an area is within 15 days of expiring and you are on Wi-Fi, the app tries to update it. Offline navigation works if the whole route is inside the downloaded area. Google also says transit, cycling, and walking directions are not available offline, and driving directions have no live traffic or alternate routes. Offline maps are not offered in every country.</p>
+  <h3>Apple Maps</h3>
+  <ol class="steps">
+    <li>You need iOS 17 or later, according to Apple's support page.</li>
+    <li>Search for a place and tap Download. Or drop a pin on an empty spot. Or tap your profile picture, open Offline Maps, and tap Add.</li>
+    <li>Adjust the area and confirm. The app shows the file size first.</li>
+  </ol>
+  <p>Apple says offline maps give turn-by-turn directions for driving, walking, cycling, and transit. They do not sync between your devices, so download on each one. Apple also lists two settings worth checking. Optimize Storage removes unused offline maps after a while, so turn that off before a long trip if you can. Only Use Offline Maps makes the app rely on downloaded data even when a connection exists.</p>
+  <h3>Hiking and topo apps</h3>
+  <p>Hiking apps follow the same pattern. The onX Maps blog says waypoints, tracks, and routes you save in the field stay on the phone and sync later, but you must download map areas before you leave coverage. Look for terrain layers (contour lines) and trail layers, not only street maps. Download the map layer you plan to use. A satellite photo layer may download separately from the trail layer.</p>
+  <aside class="callout warn"><h4>Warning</h4><p>A downloaded map can go stale or be removed. Test it in airplane mode the night before. If it will not load, you still have time to fix it. Print or carry a paper map as a backup (see Part 9 › Maps &amp; Compass).</p></aside>
+</section>
+
+<section id="share-location">
+  <h2 id="share-location-h">Sharing Your Location and Coordinates</h2>
+  <p>Rescuers want your position fast and in a clear format. Use your phone's map or compass app to show it. Most apps show latitude and longitude, and some let you change the format. Pick one format and stay with it. Read the numbers aloud slowly and say whether each is north or south, east or west. The formats are explained in Part 9 › Maps &amp; Compass, along with UTM and MGRS. Before you need it, find where your own phone shows coordinates and practice reading them out. I could not open the vendors' coordinate help pages for this chapter, so I give no step-by-step menu path. Do this at home.</p>
+  <p>Always add words to the numbers. Give a trail name, a landmark, the direction you were heading, and the time you last knew where you were. This follows the same message layout used in Part 9 › Signaling, Rescue &amp; Communication.</p>
+  <h3>Emergency SOS by satellite</h3>
+  <p>Some phones can reach emergency help by satellite when there is no cell or Wi-Fi signal. This is a last resort. Rules and regions change, so check your phone maker's page before a trip.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th></th><th>iPhone (Apple)</th><th>Pixel (Google)</th></tr></thead>
+    <tbody>
+      <tr><td>Which phones</td><td>iPhone 14 and later</td><td>Pixel 9 and later, except Pixel 9a</td></tr>
+      <tr><td>Where</td><td>Listed countries include the US, Canada, Mexico, Australia, Japan, New Zealand, and many European countries</td><td>US, Canada, Puerto Rico, and about 30 other countries</td></tr>
+      <tr><td>You need</td><td>Outdoors, clear view of sky and horizon, no cell or Wi-Fi in range</td><td>Clear view of sky. Google Messages set as your default messaging app</td></tr>
+      <tr><td>How it works</td><td>Try the local emergency call first. Then the phone guides you to text emergency services</td><td>Dial the emergency number. A Satellite SOS option appears if there is no service. Answer the questions, then aim the phone</td></tr>
+      <tr><td>Cost</td><td>Free for two years from activating a supported iPhone</td><td>Not stated on the page I checked</td></tr>
+    </tbody>
+  </table></div>
+  <p>Apple says it works only with a clear view and warns that availability elsewhere depends on government rules. Apple's text relay supports a limited set of languages. Google says Satellite SOS is for "exceptional circumstances," replies usually come within a few minutes, and you should stay outdoors to receive them. Both companies offer a demo mode. Run it once at home. Other Android makers have their own satellite features. Check your maker's page, because I did not verify them.</p>
+  <aside class="callout tip"><h4>Tip</h4><p>Satellite messaging is slow and needs your phone pointed at the sky. Keep messages short: who, where, what happened, how many people, and what you need. See Part 9 › Signaling, Rescue &amp; Communication for the full checklist.</p></aside>
+  <h3>Calling, texting, and 911 text</h3>
+  <p>FEMA says phone networks can jam during emergencies. Texts need less capacity and are more likely to go through than calls. If a call will not connect, send a short text and try again later.</p>
+  <p>Texting 911 is different. The FCC says text-to-911 works only where the local 911 center has asked for it and is ready to receive texts. Some centers do not take texts. A Missouri 911 board adds that texts get no priority on the network, and the dispatcher cannot pinpoint your location from a text the way a voice call can. If text is not supported, you should get an automatic bounce-back message. Call if you can. If you must text, put your exact location in the first message. An older FCC guide, reproduced by a county 911 office, gives the same advice. I treat that copy as a secondary source.</p>
+  <aside class="callout myth"><h4>Myth vs. fact</h4><p><strong>Myth:</strong> If I can text, I can text 911 from anywhere. <strong>Fact:</strong> Text-to-911 depends on the local 911 center. Where it is not offered, you get a bounce-back. A voice call is the safer first choice. Never rely on a text alone to summon help in the backcountry.</p></aside>
+</section>
+
+<section id="battery">
+  <h2 id="battery-h">Battery Management</h2>
+  <p>In a survival setting, battery is your fuel. The best savings come from doing less, not from clever settings. Plan to use the phone in short bursts: look at the map, find your position, make a decision, then shut it down.</p>
+  <figure class="illus">
+    <svg viewBox="0 0 640 380" role="img" aria-labelledby="gps-and-phones-fig3-title">
+      <title id="gps-and-phones-fig3-title">Checklist panel of eight ways to save phone battery in the field</title>
+      <rect x="10" y="10" width="620" height="360" rx="8" class="fp s"/>
+      <rect x="10" y="10" width="620" height="38" rx="8" class="fs s"/>
+      <text x="320" y="35" class="t b c">BATTERY-SAVING CHECKLIST</text>
+      <rect x="30" y="68" width="18" height="18" class="s"/><path d="M33 77 L38 82 L46 71" class="ss"/>
+      <text x="58" y="82" class="t sm">Charge to full. Carry a power bank.</text>
+      <rect x="30" y="118" width="18" height="18" class="s"/><path d="M33 127 L38 132 L46 121" class="ss"/>
+      <text x="58" y="132" class="t sm">Download maps before you leave.</text>
+      <rect x="30" y="168" width="18" height="18" class="s"/><path d="M33 177 L38 182 L46 171" class="ss"/>
+      <text x="58" y="182" class="t sm">Turn on low power mode.</text>
+      <rect x="30" y="218" width="18" height="18" class="s"/><path d="M33 227 L38 232 L46 221" class="ss"/>
+      <text x="58" y="232" class="t sm">Dim the screen. Close unused apps.</text>
+      <rect x="330" y="68" width="18" height="18" class="s"/><path d="M333 77 L338 82 L346 71" class="ss"/>
+      <text x="358" y="82" class="t sm">Use airplane mode if no signal.</text>
+      <rect x="330" y="118" width="18" height="18" class="s"/><path d="M333 127 L338 132 L346 121" class="ss"/>
+      <text x="358" y="132" class="t sm">Keep the phone warm, close to you.</text>
+      <rect x="330" y="168" width="18" height="18" class="s"/><path d="M333 177 L338 182 L346 171" class="ss"/>
+      <text x="358" y="182" class="t sm">Text instead of call. Keep it short.</text>
+      <rect x="330" y="218" width="18" height="18" class="s"/><path d="M333 227 L338 232 L346 221" class="ss"/>
+      <text x="358" y="232" class="t sm">Switch off between checks.</text>
+      <rect x="30" y="268" width="580" height="80" rx="6" class="fd sd"/>
+      <text x="320" y="296" class="t sm b c">Test at home: some phones in power-saving mode</text>
+      <text x="320" y="314" class="t sm b c">can weaken or pause the GPS. Check how yours behaves,</text>
+      <text x="320" y="332" class="t sm b c">in airplane mode too, before the trip.</text>
+    </svg>
+    <figcaption><strong>Figure 3.</strong> A field checklist for saving battery. Items come from the FEMA, FCC, Apple, CalTopo, and onX pages listed in Sources.</figcaption>
+  </figure>
+  <ul>
+    <li><strong>Low power and airplane mode.</strong> FEMA lists both as ways to save energy. When there is no signal, your phone burns power searching for towers, so airplane mode helps. FEMA and the FCC also suggest switching the phone off when it cannot find a usable signal. Turn it on only to check for a signal.</li>
+    <li><strong>Airplane mode and GPS.</strong> Satellite positioning does not need a cell connection, so airplane mode may leave GPS working. I could not confirm this for every phone. Test it at home. Some phones also let you turn Wi-Fi or Bluetooth back on separately.</li>
+    <li><strong>Power-saving can hurt GPS.</strong> The CalTopo guide says some Android phones in power-saving mode can switch the GPS receiver off, which makes erratic tracks. The onX blog also lists battery-saver mode as a cause of weak tracking. Check this before you depend on it.</li>
+    <li><strong>Cut the big drains.</strong> Dim the screen. Close apps. Stop continuous track recording unless you need it. These are common-sense steps, not figures from a test.</li>
+    <li><strong>Save a position, then power down.</strong> Mark a waypoint or write your coordinates on paper. You can power off and still know where the camp, the water, or the last known point is.</li>
+  </ul>
+
+  <h3>Cold weather</h3>
+  <p>Cold cuts battery life fast. Apple says its phones are made to run in air from 32 to 95°F (0 to 35°C) and to be stored between -4 and 113°F (-20 to 45°C). Below the running range, battery life drops for a while, the phone may shut off, and it may refuse to charge. Apple says charging resumes when the phone returns to a normal temperature, and battery life recovers when it warms up. Apple does not give a percentage for the loss, and neither do I.</p>
+  <figure class="illus">
+    <svg viewBox="0 0 640 300" role="img" aria-labelledby="gps-and-phones-fig4-title">
+      <title id="gps-and-phones-fig4-title">Temperature scale showing Apple's operating range of 32 to 95 degrees Fahrenheit and storage range of minus 4 to 113 degrees Fahrenheit</title>
+      <text x="320" y="26" class="t b c">Apple's stated temperature ranges for iPhone (air temperature, °F)</text>
+      <text x="40" y="66" class="t sm">Storage range</text>
+      <rect x="104" y="74" width="468" height="30" class="fs s"/>
+      <text x="338" y="94" class="t sm c">-4 to 113°F (-20 to 45°C)</text>
+      <text x="40" y="136" class="t sm">Operating range</text>
+      <rect x="40" y="144" width="208" height="30" class="fw s"/>
+      <rect x="248" y="144" width="252" height="30" class="fg s"/>
+      <rect x="500" y="144" width="100" height="30" class="fd s"/>
+      <text x="144" y="164" class="t sm c">Too cold</text>
+      <text x="374" y="164" class="t sm c">32 to 95°F (0 to 35°C)</text>
+      <text x="550" y="164" class="t sm c">Too hot</text>
+      <line x1="40" y1="200" x2="600" y2="200" class="s"/>
+      <path d="M40 200 L40 208 M120 200 L120 208 M248 200 L248 208 M360 200 L360 208 M500 200 L500 208 M600 200 L600 208" class="s"/>
+      <text x="40" y="224" class="t sm c">-20</text>
+      <text x="120" y="224" class="t sm c">0</text>
+      <text x="248" y="224" class="t sm c">32</text>
+      <text x="360" y="224" class="t sm c">60</text>
+      <text x="500" y="224" class="t sm c">95</text>
+      <text x="600" y="224" class="t sm c">120</text>
+      <text x="144" y="258" class="t sm c">Battery life drops, phone may shut off,</text>
+      <text x="144" y="274" class="t sm c">charging may stop. Recovers when warm.</text>
+    </svg>
+    <figcaption><strong>Figure 4.</strong> Apple's stated ranges, drawn to scale. The drawing does not show how much battery you lose in the cold, because the sources I opened give no number. Other brands list their own limits.</figcaption>
+  </figure>
+  <ol class="steps">
+    <li>Keep the phone in an inside pocket, close to your body. Your body heat is the warmest thing you carry. (This is practical advice, not from Apple's page.)</li>
+    <li>Keep the spare battery bank warm too, for the same reason.</li>
+    <li>Take the phone out only when you need it, then put it back.</li>
+    <li>If it shuts off in the cold, do not keep pressing buttons. Warm it inside your clothing and try again.</li>
+    <li>Do not warm it over a fire or on a hot rock. Apple says not to leave it in places that get too hot.</li>
+  </ol>
+  <h3>Water and rough handling</h3>
+  <p>Apple says IP67 and IP68 ratings come from controlled lab tests. The resistance is not permanent and can weaken with wear. Liquid damage is not covered by warranty. Apple says not to submerge the phone or expose it to fast or pressurized water. In the field, put the phone in a zip-top bag or a dry bag when you cross water or work in rain. Wipe it dry before opening ports. See Part 7 › Environmental Emergencies for cold injuries to you.</p>
+
+  <h3>Power banks: the math</h3>
+  <p>A power bank's label uses milliamp-hours (mAh). That number only compares fairly between batteries of the same voltage. To compare, convert to watt-hours (Wh): Wh = amp-hours × volts. Divide mAh by 1,000 to get amp-hours. Lithium cells usually run at a nominal 3.7 volts. (This is standard electrical arithmetic. I did not open a source for it, and the numbers below are examples.)</p>
+  <figure class="illus">
+    <svg viewBox="0 0 640 280" role="img" aria-labelledby="gps-and-phones-fig5-title">
+      <title id="gps-and-phones-fig5-title">Worked example: a 10,000 mAh power bank holds 37 watt-hours, a 4,000 mAh phone battery holds 14.8 watt-hours, giving about 2.5 charges on paper</title>
+      <rect x="20" y="40" width="170" height="110" rx="8" class="fs s"/>
+      <rect x="190" y="75" width="10" height="40" class="f"/>
+      <text x="105" y="70" class="t b c">Power bank</text>
+      <text x="105" y="94" class="t sm c">10,000 mAh</text>
+      <text x="105" y="112" class="t sm c">= 10 Ah × 3.7 V</text>
+      <text x="105" y="134" class="t b c">37 Wh</text>
+      <rect x="250" y="40" width="170" height="110" rx="8" class="fs s"/>
+      <rect x="420" y="75" width="10" height="40" class="f"/>
+      <text x="335" y="70" class="t b c">Phone battery</text>
+      <text x="335" y="94" class="t sm c">4,000 mAh</text>
+      <text x="335" y="112" class="t sm c">= 4 Ah × 3.7 V</text>
+      <text x="335" y="134" class="t b c">14.8 Wh</text>
+      <text x="455" y="104" class="t b">37 ÷ 14.8</text>
+      <text x="455" y="124" class="t b">≈ 2.5 charges</text>
+      <rect x="20" y="180" width="600" height="80" rx="6" class="fd sd"/>
+      <text x="320" y="208" class="t sm b c">That is the best case on paper. Real results are lower,</text>
+      <text x="320" y="226" class="t sm b c">because of conversion loss, cold, and cable and charger limits.</text>
+      <text x="320" y="246" class="t sm c">Example numbers only. Read your own labels.</text>
+    </svg>
+    <figcaption><strong>Figure 5.</strong> Worked example of power-bank math. Capacity labels give the maximum; you will get less.</figcaption>
+  </figure>
+  <p>So a bigger bank means more phone charges, but it also means more weight. Cold also cuts a bank's output, because it is a battery too. Carry the right cable. A bank without its cable is dead weight.</p>
+  <h3>Solar chargers</h3>
+  <p>A solar panel makes power only when sunlight hits it. Cloud, tree cover, short winter days, and a poor angle all cut the output. For most short emergencies a charged power bank is more dependable. A solar panel helps most on long trips in open country, and it works best when it charges a power bank during the day, not the phone directly. (This is general reasoning. I did not find a vendor-neutral source with numbers, so I give none.)</p>
+</section>
+
+<section id="gps-units">
+  <h2 id="gps-units-h">Dedicated GPS Units vs. Phones</h2>
+  <p>A handheld GPS is a single-purpose tool. Some people prefer one for long trips. I did not open a source that compares models, so treat this table as general guidance and check the specs of any unit you consider.</p>
+  <div class="table-wrap"><table class="compare">
+    <thead><tr><th></th><th>Phone</th><th>Handheld GPS unit</th></tr></thead>
+    <tbody>
+      <tr><td>Cost to you</td><td>You already own it</td><td>Extra purchase</td></tr>
+      <tr><td>Other jobs</td><td>Calls, texts, camera, light, satellite SOS on some models</td><td>Navigation only on most models</td></tr>
+      <tr><td>Power</td><td>Built-in battery, charges from a bank</td><td>Many models take replaceable batteries. Check yours</td></tr>
+      <tr><td>Weather and drops</td><td>Check the maker's limits. Use a case and a bag</td><td>Often built for outdoor use. Check the rating</td></tr>
+      <tr><td>Biggest risk</td><td>One dead battery loses phone, map, light, and call</td><td>Same screen and battery limits. Still needs its maps loaded</td></tr>
+    </tbody>
+  </table></div>
+  <p>Whatever you carry, do not use it as your only plan. A phone that carries your map, your light, and your emergency call is a single point of failure.</p>
+</section>
+
+<section id="failures">
+  <h2 id="failures-h">When It Fails, and What to Do</h2>
+  <figure class="illus">
+    <svg viewBox="0 0 640 380" role="img" aria-labelledby="gps-and-phones-fig6-title">
+      <title id="gps-and-phones-fig6-title">Chart matching each phone failure mode to a fallback action</title>
+      <defs>
+        <marker id="gps-and-phones-fig6-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0,0 L10,5 L0,10 z" class="f"/>
+        </marker>
+      </defs>
+      <text x="125" y="26" class="t b c">If this happens</text>
+      <text x="470" y="26" class="t b c">Do this</text>
+      <rect x="10" y="40" width="230" height="50" rx="6" class="fd sd"/>
+      <text x="125" y="70" class="t sm c">Dead battery</text>
+      <line x1="240" y1="65" x2="278" y2="65" class="s" marker-end="url(#gps-and-phones-fig6-arrow)"/>
+      <rect x="280" y="40" width="350" height="50" rx="6" class="fs ss"/>
+      <text x="455" y="60" class="t sm c">Power bank. Then paper map and compass.</text>
+      <text x="455" y="78" class="t sm c">Stay put if you have no map.</text>
+      <rect x="10" y="102" width="230" height="50" rx="6" class="fd sd"/>
+      <text x="125" y="132" class="t sm c">No fix in canyon or forest</text>
+      <line x1="240" y1="127" x2="278" y2="127" class="s" marker-end="url(#gps-and-phones-fig6-arrow)"/>
+      <rect x="280" y="102" width="350" height="50" rx="6" class="fs ss"/>
+      <text x="455" y="122" class="t sm c">Move to open sky. Wait a few minutes.</text>
+      <text x="455" y="140" class="t sm c">Match terrain to your map instead.</text>
+      <rect x="10" y="164" width="230" height="50" rx="6" class="fd sd"/>
+      <text x="125" y="194" class="t sm c">Map did not download</text>
+      <line x1="240" y1="189" x2="278" y2="189" class="s" marker-end="url(#gps-and-phones-fig6-arrow)"/>
+      <rect x="280" y="164" width="350" height="50" rx="6" class="fs ss"/>
+      <text x="455" y="184" class="t sm c">Use the blue-dot position and coordinates only.</text>
+      <text x="455" y="202" class="t sm c">Find a paper map or walk known landmarks.</text>
+      <rect x="10" y="226" width="230" height="50" rx="6" class="fd sd"/>
+      <text x="125" y="256" class="t sm c">Phone shuts off in the cold</text>
+      <line x1="240" y1="251" x2="278" y2="251" class="s" marker-end="url(#gps-and-phones-fig6-arrow)"/>
+      <rect x="280" y="226" width="350" height="50" rx="6" class="fs ss"/>
+      <text x="455" y="246" class="t sm c">Warm it inside your clothing.</text>
+      <text x="455" y="264" class="t sm c">Try again after several minutes.</text>
+      <rect x="10" y="288" width="230" height="70" rx="6" class="fd sd"/>
+      <text x="125" y="312" class="t sm c">Position jumps, or the phone</text>
+      <text x="125" y="330" class="t sm c">disagrees with the land</text>
+      <text x="125" y="348" class="t sm c">(jamming or spoofing)</text>
+      <line x1="240" y1="323" x2="278" y2="323" class="s" marker-end="url(#gps-and-phones-fig6-arrow)"/>
+      <rect x="280" y="288" width="350" height="70" rx="6" class="fs ss"/>
+      <text x="455" y="312" class="t sm c">Trust landmarks and compass over the screen.</text>
+      <text x="455" y="330" class="t sm c">Compare with a map and the sun or stars.</text>
+      <text x="455" y="348" class="t sm c">Do not follow a track that makes no sense.</text>
+    </svg>
+    <figcaption><strong>Figure 6.</strong> Each failure mode, matched to a fallback. The fallbacks are described in Part 9 › Maps &amp; Compass and Part 9 › Navigation Without Instruments.</figcaption>
+  </figure>
+  <h3>Dead battery</h3>
+  <p>Warm the phone, plug in a bank, and run only what you need. If nothing works, switch to paper. This is why you carry a map and a baseplate compass. Both need no power (see Part 9 › Maps &amp; Compass). If you do not have them, use the sun and stars (see Part 9 › Navigation Without Instruments).</p>
+  <h3>No fix under canopy or in canyons</h3>
+  <p>GPS.gov says satellite signals can be blocked by structures and plants. Walls of rock and thick forest do the same. Climb to a ridge, a clearing, or a river bar. Hold the phone away from your body and wait. If the fix stays weak, use handrails on the map: a stream, a ridge, a trail. A compass and the terrain can carry you until the sky opens up.</p>
+  <h3>Map not downloaded</h3>
+  <p>If your map shows only a blue dot on blank gray, you still have coordinates and the compass app. If you stored a screenshot of the map, open it. Screenshots work with no signal. Take one of your route, your camp, and the nearest road before every trip. This is a cheap backup, but my sources do not describe it, so treat it as common sense.</p>
+  <h3>Jamming and spoofing</h3>
+  <p>GPS.gov names radio interference and jamming as less common causes of error. Minn warns that GPS is open to jamming and spoofing. Jamming blocks the signal. Spoofing sends a false one. For a hiker, the practical rule is simple: if the dot jumps, or the phone puts you somewhere that the land does not match, believe the land. Check against a compass and a map. I found no source with a field test for spoofing, so I give none.</p>
+  <h3>Common mistakes</h3>
+  <aside class="callout donot"><h4>Do not</h4><ul>
+    <li>Do not leave the maps for the trailhead. Download them at home.</li>
+    <li>Do not depend on one phone for map, light, camera, and emergency call.</li>
+    <li>Do not leave the phone in a cold pack or on the dashboard of a cold car overnight.</li>
+    <li>Do not run the screen at full brightness while you walk.</li>
+    <li>Do not follow the blue dot into terrain the map says is a cliff.</li>
+    <li>Do not warm a phone over a fire or stove.</li>
+  </ul></aside>
+  <p>A phone is a very good navigation tool and a poor survival plan. Use it to get a position and to ask for help, then save the battery. Practice with a compass and map on a safe day (see Part 9 › Travel &amp; Movement).</p>
+</section>
+
+<section class="sources" id="sources">
+  <h2 id="sources-h">Sources</h2>
+  <ol>
+    <li><a href="https://www.gps.gov/node/70">GPS Accuracy</a> — GPS.gov, US government</li>
+    <li><a href="https://support.apple.com/en-euro/101573">Use Emergency SOS via satellite on your iPhone</a> — Apple Support</li>
+    <li><a href="https://support.google.com/pixelphone/answer/15254448?hl=en">Get emergency help through satellite with your Pixel phone</a> — Google Pixel Help</li>
+    <li><a href="https://support.google.com/maps/answer/6291838">Download areas and navigate offline in Google Maps</a> — Google Maps Help</li>
+    <li><a href="https://support.apple.com/en-euro/105084">How to download maps to use offline on your iPhone</a> — Apple Support</li>
+    <li><a href="https://www.fcc.gov/node/25958">Text-to-911 requirements and registry</a> — Federal Communications Commission</li>
+    <li><a href="https://desmoinescounty.iowa.gov/files/descom/text_911_faq_14828.pdf">Text 911 FAQ</a> — Des Moines County, Iowa 911 office (reproduces older FCC consumer advice; secondary source)</li>
+    <li><a href="https://www.missouri911.org/textto911/consumer">Text to 911 consumer information</a> — Missouri 911 Service Board (secondary source)</li>
+    <li><a href="https://www.fema.gov/vi/print/txt/node/333234">Communicating during and after disasters (texting, battery tips)</a> — FEMA</li>
+    <li><a href="https://support.apple.com/en-us/ht201678">If your iPhone or iPad gets too hot or too cold</a> — Apple Support</li>
+    <li><a href="https://support.apple.com/en-kg/guide/iphone/important-handling-information-iphbbe12ba1/13.0">Important handling information for iPhone</a> — Apple Support</li>
+    <li><a href="https://blog.caltopo.com/?p=2232">Maps and Tracks: Accuracy, Precision, and your Phone GPS (Part 2)</a> — CalTopo blog (reputable mapping company; secondary source)</li>
+    <li><a href="https://onxmaps.com/blog/how-gps-works-and-where-you-can-put-it-to-use">How GPS Works And Where You Can Put it to Use</a> — onX Maps (secondary source)</li>
+    <li><a href="https://androidcentral.com/how-does-gps-work-my-phone">How does GPS work on my phone?</a> — Android Central (secondary source)</li>
+    <li><a href="https://michaelminn.net/tutorials/gps">The Global Positioning System (GPS)</a> — Michael Minn tutorial (secondary source)</li>
+  </ol>
+</section>
+<p class="verified">Facts checked against the sources above on November 16, 2026. This guide is educational and is not a substitute for professional training or medical care.</p>
