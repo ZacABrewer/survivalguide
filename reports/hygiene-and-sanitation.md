@@ -1,0 +1,22 @@
+# Report: hygiene-and-sanitation chapter
+
+File: /home/claude/survival-site/content/hygiene-and-sanitation.html
+Word count: about 3,600 (body text excluding SVG text and the Sources list; tables, callouts and captions included; slightly over the 3,500 guide, trimmed from about 4,800)
+Figures: 8 original inline SVGs, all parse as valid XML, no hard-coded colors (handwashing steps; tippy-tap; cat hole plan and cross-section with 200 ft distances; pit latrine cross-section; cloth pad pattern; repellent protection-time chart; rodent-proofing points on a house; hantavirus-safe cleanup steps).
+Sources: 25 listed. All were opened with WebFetch. List: CDC handwashing, CDC hygiene, Leave No Trace waste, Watershed Management Group tippy-tap page, IFRC/FSM-TWiG sanitation standards (Sphere-aligned), IFRC reusable pads flyer, CDC head lice (two pages, one a hosted PDF copy), CDC scabies treatment, CDC bed bugs, EPA bed bug preparation, Texas A&M bed bug DIY, CDC mosquito prevention, America's Poison Centers repellent article, CDC rodent cleanup, CDC hantavirus prevention, CDC rodent control, Missouri Extension, UC IPM house mouse, UC cockroach quick tips, UConn cockroaches, NIOSH sodium hydroxide, BrambleBerry lye guide (secondary), Healthline soap guide (secondary), PubMed miswak meta-analysis.
+Web searches used: 12 (cap reached).
+
+## Consistency with existing chapters
+- Latrine/cat hole distance: 200 ft (60 m) from water, trails, camp; cat hole 6-8 in deep; 5 ft (1.5 m) pit clearance above wet-season water table; same as content/when-help-isnt-coming.html (Figure 7 there). The IFRC standard says 30 m; the chapter states the difference and uses the larger number.
+- Bleach: grep of shelter.html, red-pages.html, na-08 found no hantavirus/cleaning bleach ratio. Water chapter and Red Pages only have drinking-water doses (drops). The chapter uses the CDC cleanup mix (1.5 cups bleach per 1 gallon water, made fresh) and says it is not a drinking-water dose.
+
+## Could not verify / disagreements / omitted
+- Blocked or failed fetches (not used): CDC hantavirus cleanup page (HTTP error), CDC handwashing-stations page, Penn State extension mice page, ADA homemade toothpaste, Mayo Clinic toothpaste/body odor, AAP healthychildren lice, WHO menstrual page, CDC Yellow Book bug bites and scabies, CDC cockroach page, PMC traditional oral hygiene review, Georgetown cloth poster, EPA bed bug hub steps (no detail). The CDC tippy-tap PDF only existed as an archive viewer, so tippy-tap construction steps are NOT sourced; the figure is labeled schematic and only the "1 gal serves about 15-30 people, shared soap, air dry" facts come from Watershed Management Group.
+- Omitted for lack of an authoritative source I opened: tooth powder recipe, deodorant recipe, lip balm recipe, shampoo recipe, homemade fly traps, cloth-diaper wash temperatures, menstrual red-flag thresholds, sun-drying time for killing bugs, fixed pit depth and fill-line rule, DEET protection hours and concentrations, cloth pad dimensions and fabric.
+- Soap method (cold process temperatures, 48 hr rest, 6 week cure) comes only from Healthline and BrambleBerry (secondary, flagged). NIOSH confirms the hazards but not a flush duration. The 15-minute flush time is BrambleBerry only; no NIOSH duration given.
+- Repellent protection times are from one poison-center summary (America's Poison Centers), not the EPA; CDC lists active ingredients but gave no concentrations or times. The "Strong/Moderate/Weak/Unproven" grades are this chapter's own summary of those two sources, not a published rating. Under-3 limit for OLE/PMD is from CDC; picaridin under-2 limit from the poison center article only.
+- Miswak: one meta-analysis abstract (8 studies, high heterogeneity); abstract itself had reporting oddities; stated cautiously.
+- Lice retreat day: CDC says pyrethrins 9-10 days, permethrin "often around day 9"; label governs. Scabies wash: CDC 122 F (50 C) for 10 min; lice wash 130 F; bed bugs dry 30 min high (EPA/Texas A&M) differ by pest and are given separately.
+- Texas A&M says washing in hot water 30 minutes OR tumble 30 minutes; EPA says dryer 30 minutes and gives no wash temperature. The chapter says dry high at least 30 minutes.
+- Gasoline/kerosene on scalp: no source opened covers it; the chapter flags it as not on any approved list.
+- Cross-reference names follow spec section 8 only (no "Wilderness First Aid").

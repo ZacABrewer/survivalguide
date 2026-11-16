@@ -6,6 +6,7 @@ then writes a complete static site to site/. Standard library only.
 
     python3 build.py
 """
+import os
 import html
 import json
 import re
@@ -40,6 +41,11 @@ CONTENT_MAP = [
     (7, "Bites, Stings", "bites-stings-poisoning", None),
     (7, "Illness in the Field", "illness-in-the-field", None),
     (7, "Medical Kits", "medical-kits-and-medicines", None),
+    (7, "Emergency Childbirth", "emergency-childbirth-and-long-term-care", None),
+    (7, "Evacuation & Rescue", "evacuation-and-rescue-decisions", None),
+    (7, "Hygiene & Sanitation", "hygiene-and-sanitation", None),
+    (9, "Maps & Compass", "maps-and-compass", None),
+    (9, "Navigation Without", "navigation-without-instruments", None),
     (3, "Cordage", "cordage-knots-and-lashings", None),
     (13, "Great Plains", "na-07-great-plains-and-prairies", None),
     (13, "Eastern Deciduous", "na-08-eastern-deciduous-forest-appalachians-great-lakes-and-ozarks", None),
@@ -333,7 +339,9 @@ def assemble():
         for ch in part["chapters"]:
             cs = ch.get("content_slug")
             f = CONTENT / f"{cs}.html" if cs else None
-            if f and f.exists():
+            # Unchecked drafts stay off the site unless INCLUDE_DRAFTS=1 is set.
+            publishable = cs in status or os.environ.get("INCLUDE_DRAFTS") == "1"
+            if f and f.exists() and publishable:
                 ch["html"] = f.read_text(encoding="utf-8")
                 ch["state"] = status.get(cs, {}).get("status", "draft")
                 ch["checked"] = status.get(cs, {}).get("checked")

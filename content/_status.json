@@ -1,64 +1,84 @@
 {
-  "how-to-use": {
-    "status": "guide"
-  },
-  "golden-rules": {
-    "status": "guide"
-  },
-  "fire": {
-    "status": "verified",
-    "checked": "Nov 11, 2026"
-  },
-  "vitamin-c": {
-    "status": "verified",
-    "checked": "Nov 11, 2026"
-  },
-  "signaling-rescue": {
-    "status": "verified",
-    "checked": "Nov 11, 2026"
-  },
-  "lookalikes-carrot-family": {
-    "status": "verified",
-    "checked": "Nov 11, 2026"
-  },
-  "shelter": {
-    "status": "verified",
-    "checked": "Nov 11, 2026"
-  },
-  "foraging-principles": {
-    "status": "verified",
-    "checked": "Nov 11, 2026"
-  },
-  "water": {
-    "status": "verified",
-    "checked": "Nov 11, 2026"
-  },
-  "red-pages": {
-    "status": "verified",
-    "checked": "Nov 11, 2026"
-  },
-  "wounds-burns-infection": {
-    "status": "verified",
-    "checked": "Nov 11, 2026"
-  },
-  "patient-assessment": {
-    "status": "verified",
-    "checked": "Nov 11, 2026"
-  },
-  "when-help-isnt-coming": {
-    "status": "verified",
-    "checked": "Nov 11, 2026"
-  },
-  "na-07-great-plains-and-prairies": {
-    "status": "verified",
-    "checked": "Nov 11, 2026"
-  },
-  "na-08-eastern-deciduous-forest-appalachians-great-lakes-and-ozarks": {
-    "status": "verified",
-    "checked": "Nov 11, 2026"
-  },
-  "cordage-knots-and-lashings": {
-    "status": "verified",
-    "checked": "Nov 11, 2026"
-  }
+ "how-to-use": {
+  "status": "guide"
+ },
+ "golden-rules": {
+  "status": "guide"
+ },
+ "fire": {
+  "status": "verified",
+  "checked": "Nov 11, 2026"
+ },
+ "vitamin-c": {
+  "status": "verified",
+  "checked": "Nov 11, 2026"
+ },
+ "signaling-rescue": {
+  "status": "verified",
+  "checked": "Nov 11, 2026"
+ },
+ "lookalikes-carrot-family": {
+  "status": "verified",
+  "checked": "Nov 11, 2026"
+ },
+ "shelter": {
+  "status": "verified",
+  "checked": "Nov 11, 2026"
+ },
+ "foraging-principles": {
+  "status": "verified",
+  "checked": "Nov 11, 2026"
+ },
+ "water": {
+  "status": "verified",
+  "checked": "Nov 11, 2026"
+ },
+ "red-pages": {
+  "status": "verified",
+  "checked": "Nov 11, 2026"
+ },
+ "wounds-burns-infection": {
+  "status": "verified",
+  "checked": "Nov 11, 2026"
+ },
+ "patient-assessment": {
+  "status": "verified",
+  "checked": "Nov 11, 2026"
+ },
+ "when-help-isnt-coming": {
+  "status": "verified",
+  "checked": "Nov 11, 2026"
+ },
+ "na-07-great-plains-and-prairies": {
+  "status": "verified",
+  "checked": "Nov 11, 2026"
+ },
+ "na-08-eastern-deciduous-forest-appalachians-great-lakes-and-ozarks": {
+  "status": "verified",
+  "checked": "Nov 11, 2026"
+ },
+ "cordage-knots-and-lashings": {
+  "status": "verified",
+  "checked": "Nov 11, 2026"
+ },
+ "bones-joints-head-spine": {
+  "status": "verified",
+  "checked": "Nov 16, 2026"
+ },
+ "shock-and-circulation": {
+  "status": "verified",
+  "checked": "Nov 16, 2026"
+ },
+ "environmental-emergencies": {
+  "status": "verified",
+  "checked": "Nov 16, 2026"
+ },
+ "illness-in-the-field": {
+  "status": "verified",
+  "checked": "Nov 16, 2026"
+ },
+ "medical-kits-and-medicines": {
+  "status": "verified",
+  "checked": "Nov 16, 2026"
+ }
 }
