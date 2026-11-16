@@ -178,7 +178,9 @@ Use these names, e.g. "(see Part 7 › Bleeding, Wounds, Burns & Infection)":
 - Part 5 › Food Safety · Part 5 › Preservation · Part 5 › Off-Grid Cooking Methods
 - Part 6 › Vitamin C & Scurvy
 - Part 7 › Patient Assessment & Vital Signs · Part 7 › Bleeding, Wounds, Burns & Infection · Part 7 › Bones, Joints, Head & Spine · Part 7 › Environmental Emergencies · Part 7 › Bites, Stings & Poisoning · Part 7 › Illness in the Field · Part 7 › Medical Kits & Medicines · Part 7 › Emergency Childbirth & Long-Term Care · Part 7 › Evacuation & Rescue Decisions · Part 7 › Hygiene & Sanitation · Part 7 › Herbal Medicine & Health Tonics
-- Part 9 › Signaling, Rescue & Communication · Part 9 › Maps & Compass · Part 9 › Travel & Movement · Part 9 › Natural Disasters
+- Part 9 › Signaling, Rescue & Communication · Part 9 › Maps & Compass · Part 9 › Navigation Without Instruments · Part 9 › GPS & Phones · Part 9 › Travel & Movement · Part 9 › Weather · Part 9 › Natural Disasters · Part 9 › Communication · Part 9 › Time & Seasons
+- Part 1 › Survival Mindset & Psychology · Part 1 › Priorities · Part 1 › Kits & Gear · Part 1 › Clothing & Layering · Part 1 › Planning
+- Part 7 › Shock & Circulation
 - Part 13 › NA-07 Great Plains & Prairies · Part 13 › NA-08 Eastern Deciduous Forest, Appalachians, Great Lakes & Ozarks
 
 ## 9. Medicine rules

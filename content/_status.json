@@ -128,5 +128,13 @@
  "travel-and-movement": {
   "status": "verified",
   "checked": "Nov 16, 2026"
+ },
+ "gps-and-phones": {
+  "status": "verified",
+  "checked": "Nov 16, 2026"
+ },
+ "time-and-seasons": {
+  "status": "verified",
+  "checked": "Nov 16, 2026"
  }
 }
