@@ -80,5 +80,17 @@
  "medical-kits-and-medicines": {
   "status": "verified",
   "checked": "Nov 16, 2026"
+ },
+ "evacuation-and-rescue-decisions": {
+  "status": "verified",
+  "checked": "Nov 16, 2026"
+ },
+ "emergency-childbirth-and-long-term-care": {
+  "status": "verified",
+  "checked": "Nov 16, 2026"
+ },
+ "maps-and-compass": {
+  "status": "verified",
+  "checked": "Nov 16, 2026"
  }
 }

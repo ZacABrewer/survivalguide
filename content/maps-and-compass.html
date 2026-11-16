@@ -95,7 +95,7 @@
     <li><strong>Index contours are thick and labeled.</strong> The USGS specification draws one at every fifth line. A USGS-based guide says every fourth or fifth, so check your legend.</li>
     <li><strong>Supplemental lines</strong> are added between two contours to show small features the regular interval would miss.</li>
   </ul>
-  <p>Count the lines you cross and multiply by the interval to find your climb. Six lines on a 40-foot map is about 240 feet (73 m). To judge slope, divide the interval by the ground distance between two lines. On a 1:24,000 map, lines 0.1 inch apart are 200 feet apart, so a 40-foot interval means a 20 percent slope, about 11 degrees. (This example is my own arithmetic.) The Army manual gives a similar rule: with a 10-meter interval, one line per 100 meters of ground is about a 10 percent slope.</p>
+  <p>Count the lines you cross and multiply by the interval to find your climb. Six lines on a 40-foot map is about 240 feet (73 m). To judge slope, divide the interval by the ground distance between two lines. On a 1:24,000 map, lines 0.1 inch apart are 200 feet apart, so a 40-foot interval means a 20 percent slope, about 11 degrees. (This worked example is plain arithmetic, not from a source.) The Army manual gives a similar rule: with a 10-meter interval, one line per 100 meters of ground is about a 10 percent slope.</p>
   <div class="table-wrap"><table>
     <thead><tr><th>Landform</th><th>Contour pattern</th></tr></thead>
     <tbody>
@@ -147,8 +147,8 @@
         <ellipse cx="107" cy="75" rx="30" ry="18" class="s"/>
         <ellipse cx="107" cy="155" rx="30" ry="18" class="s"/>
       </g>
-      <text x="147" y="106" class="t sm c">high</text>
-      <text x="67" y="106" class="t sm c">high</text>
+      <text x="147" y="80" class="t sm c">high</text>
+      <text x="67" y="80" class="t sm c">high</text>
       <text x="107" y="68" class="t sm c">low</text>
       <text x="107" y="172" class="t sm c">low</text>
       <path d="M101 109 L113 121 M113 109 L101 121" class="s"/>
@@ -256,7 +256,7 @@
   <h3>Take a bearing from the map</h3>
   <ol class="steps">
     <li>Lay one long edge of the baseplate along the line from where you are to where you want to go. The direction-of-travel arrow must point toward the goal.</li>
-    <li>Turn the bezel until the orienting lines run parallel to the map's north-south grid lines, with the bezel's N toward the top of the map.</li>
+    <li>Turn the bezel until the orienting lines run parallel to the map's north-south lines (meridians, or lines drawn parallel to the map's side edge), with the bezel's N toward the top of the map.</li>
     <li>Read the number at the index line. That is your bearing, before any declination correction.</li>
   </ol>
   <figure class="illus">
@@ -272,8 +272,10 @@
       <text x="24" y="60" class="t sm b c">N</text>
       <line x1="24" y1="88" x2="24" y2="66" class="s" marker-end="url(#maps-and-compass-fig6-arrow)"/>
       <g transform="rotate(60 97.5 162.5)">
-        <rect x="97.5" y="102.5" width="40" height="120" class="fp s"/>
-        <path d="M117.5 112 L108 130 L114 130 L114 160 L121 160 L121 130 L127 130 Z" class="f"/>
+        <rect x="97.5" y="102.5" width="60" height="120" class="fp s"/>
+        <path d="M127.5 108 L118 124 L124 124 L124 138 L131 138 L131 124 L137 124 Z" class="f"/>
+        <circle cx="127.5" cy="172" r="27" class="fs s"/>
+        <path d="M113.5 152 L113.5 192 M121.5 148 L121.5 196 M133.5 148 L133.5 196 M141.5 152 L141.5 192" class="s2"/>
       </g>
       <circle cx="50" cy="190" r="5" class="f"/>
       <circle cx="145.3" cy="135" r="5" class="f"/>
@@ -288,18 +290,18 @@
         <text x="24" y="60" class="t sm b c">N</text>
         <line x1="24" y1="88" x2="24" y2="66" class="s" marker-end="url(#maps-and-compass-fig6-arrow)"/>
         <g transform="rotate(60 97.5 162.5)">
-          <rect x="97.5" y="102.5" width="40" height="120" class="fp s"/>
-          <path d="M117.5 112 L108 130 L114 130 L114 160 L121 160 L121 130 L127 130 Z" class="f"/>
-          <circle cx="117.5" cy="162.5" r="30" class="fs s"/>
+          <rect x="97.5" y="102.5" width="60" height="120" class="fp s"/>
+          <path d="M127.5 108 L118 124 L124 124 L124 138 L131 138 L131 124 L137 124 Z" class="f"/>
+          <circle cx="127.5" cy="172" r="27" class="fs s"/>
         </g>
-        <path d="M95 168 L95 200 M102 168 L102 200 M113 168 L113 200 M120 168 L120 200" class="s2"/>
-        <text x="107.5" y="164" class="t sm b c">N</text>
+        <path d="M90.3 184 L90.3 210 M98.3 182 L98.3 214 M110.3 182 L110.3 214 M118.3 184 L118.3 210" class="s2"/>
+        <text x="104.3" y="180" class="t sm b c">N</text>
         <circle cx="50" cy="190" r="5" class="f"/>
         <circle cx="145.3" cy="135" r="5" class="f"/>
       </g>
       <text x="320" y="262" class="t b c">Step 2</text>
       <text x="320" y="280" class="t sm c">Turn bezel: lines match</text>
-      <text x="320" y="296" class="t sm c">the north-south grid, N up.</text>
+      <text x="320" y="296" class="t sm c">map north-south lines, N up.</text>
       <rect x="440" y="40" width="180" height="200" rx="10" class="fp s"/>
       <path d="M530 42 L542 58 L535 58 L535 64 L525 64 L525 58 L518 58 Z" class="f"/>
       <path d="M525 66 L535 66 L530 76 Z" class="fd sd"/>
@@ -326,8 +328,8 @@
       <text x="561" y="99" class="t sm b c">E</text>
       <text x="585" y="186" class="t sm b c">S</text>
       <text x="498" y="209" class="t sm b c">W</text>
-      <text x="548" y="64" class="t sm b">Reads 60°</text>
-      <line x1="552" y1="60" x2="537" y2="73" class="s2"/>
+      <text x="478" y="60" class="t sm b c">Reads 60°</text>
+      <line x1="510" y1="60" x2="524" y2="70" class="s2"/>
       <text x="530" y="262" class="t b c">Step 3</text>
       <text x="530" y="280" class="t sm c">Read the bearing at the</text>
       <text x="530" y="296" class="t sm c">index line: 60 degrees.</text>
@@ -361,7 +363,7 @@
 
 <section id="declination">
   <h2 id="declination-h">Declination: Magnetic North and True North</h2>
-  <p>Maps are drawn to true north. A compass needle points to magnetic north. NOAA defines declination as the angle between them, positive when magnetic north lies east of true north and negative when it lies west. REI says the lower 48 states range from about 20 degrees east in parts of Washington to about 20 degrees west in parts of Maine.</p>
+  <p>Maps are drawn to true north. A compass needle points to magnetic north. NOAA defines declination as the angle between them, positive when magnetic north lies east of true north and negative when it lies west. Across the lower 48 states it runs from east declination in the Northwest to west declination in the Northeast. REI gives the extremes as about 20 degrees east in parts of Washington and 20 degrees west in parts of Maine. Values have shrunk in many places since older guides were written: a 2025 Mountaineers handout lists about 15 degrees east near Olympia, Washington. Always look up your own value.</p>
   <figure class="illus">
     <svg viewBox="0 0 640 310" role="img" aria-labelledby="maps-and-compass-fig7-title">
       <title id="maps-and-compass-fig7-title">East declination, where the needle points east of true north, and west declination, where it points west of true north</title>
@@ -406,7 +408,7 @@
   </table></div>
   <p>Example from the Mountaineers: with 15 degrees east, a magnetic bearing of 285 is a true bearing of 300. If an answer drops below 0, add 360. If it passes 360, subtract 360.</p>
   <h3>"East is least, west is best" and its traps</h3>
-  <p>This rhyme matches the map-to-ground row of the table: in east declination, subtract (least). In west declination, add (best). None of the sources used here print the rhyme, so treat it as a memory trick, not an official rule. It fails in these ways:</p>
+  <p>This rhyme matches the map-to-ground row of the table: in east declination, subtract (least). In west declination, add (best). The National Wildfire Coordinating Group (NWCG) teaches the rhyme this way, for going from a true (map) bearing to a magnetic one. It fails in these ways:</p>
   <ul>
     <li>It works in one direction only. Going from compass to map, the steps flip.</li>
     <li>It does not apply once you set the declination on the compass. Doing both counts it twice.</li>
@@ -415,7 +417,7 @@
   </ul>
   <p>If you cannot remember, draw the declination diagram from the map margin and see which way the angle goes.</p>
   <h3>Declination changes</h3>
-  <p>NOAA says declination drifts because of unpredictable flows in Earth's core. Its World Magnetic Model is normally updated every five years. NOAA issued an out-of-cycle update in 2019 because the Arctic field was changing quickly.</p>
+  <p>NOAA says declination drifts because of unpredictable flows in Earth's core. Its World Magnetic Model is normally updated every five years. NOAA issued an out-of-cycle update in 2019 because the Arctic field was changing quickly. The current model, WMM2025, was released in December 2024.</p>
   <ul>
     <li>Denver's airport declination changed just over 2.5 degrees in 22 years (NOAA).</li>
     <li>A Mountaineers handout lists about 15 degrees east near Olympia, Washington, shifting about 0.12 degrees west each year.</li>
@@ -486,7 +488,7 @@
     <li>Orient the map. Pick two or three known landmarks in widely different directions.</li>
     <li>Point the direction-of-travel arrow at the first landmark, turn the bezel until the needle sits in the orienting arrow, and read the bearing.</li>
     <li>Correct for declination, unless the compass is already adjusted.</li>
-    <li>On the map, put the baseplate edge on the landmark, with the arrow still pointing toward it. Turn the plate until the orienting lines run north-south on the map. Draw a line along the edge, back toward your side.</li>
+    <li>On the map, put the baseplate edge on the landmark, with the arrow still pointing toward it. Turn the whole compass, not the bezel, until the orienting lines run north-south and the bezel's N points to map north. Draw a line along the edge, back toward your side.</li>
     <li>Repeat for the other landmarks. You are where the lines cross.</li>
   </ol>
   <p>This follows REI. The Army manual converts to a back bearing and draws from the landmark toward you, which gives the same line. REI says landmarks should ideally be at least 60 degrees apart as seen from you. Three lines usually form a small triangle, and your position is in or near it. A big triangle means a mistake: recheck your declination, your reading, and the landmark you matched.</p>
@@ -670,7 +672,8 @@
     <li><a href="https://www.ngdc.noaa.gov/geomag/declination.shtml">Magnetic Declination</a> — NOAA National Centers for Environmental Information</li>
     <li><a href="https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml">Geomagnetic calculators</a> — NOAA National Centers for Environmental Information</li>
     <li><a href="https://www.ncei.noaa.gov/node/473">World Magnetic Model update and why declination changes</a> — NOAA National Centers for Environmental Information</li>
-    <li><a href="https://www.usharbors.com/2025/12/noaa-british-geological-survey-release-2025-world-magnetic-model-report/">NOAA and British Geological Survey release 2025 World Magnetic Model report</a> — US Harbors (trade news; secondary source)</li>
+    <li><a href="https://www.ncei.noaa.gov/news/world-magnetic-model-2025-released">World Magnetic Model 2025 Released</a> — NOAA National Centers for Environmental Information</li>
+    <li><a href="https://www.nwcg.gov/course/ffm/location/firefighter-math-65-declination">Firefighter Math: Declination</a> — National Wildfire Coordinating Group</li>
     <li><a href="https://ia601500.us.archive.org/28/items/MManuals/Fm3-25.26MapReadingAndLandNavigation.pdf">FM 3-25.26, Map Reading and Land Navigation</a> — US Army, via Internet Archive</li>
     <li><a href="https://www.globalsecurity.org/military/library/policy/army/fm/3-25-26/ch11.htm">FM 3-25.26, Chapter 11 (offset, handrail, catching feature, attack point, steering marks, pace count)</a> — US Army text, hosted by GlobalSecurity.org</li>
     <li><a href="https://www.rei.com/learn/expert-advice/navigation-basics.html">How to Use a Compass</a> — REI (retailer and trainer; secondary source)</li>
