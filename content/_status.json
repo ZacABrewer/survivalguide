@@ -144,5 +144,21 @@
  "communication": {
   "status": "verified",
   "checked": "Nov 16, 2026"
+ },
+ "planning": {
+  "status": "verified",
+  "checked": "Nov 16, 2026"
+ },
+ "scenario-playbooks": {
+  "status": "verified",
+  "checked": "Nov 16, 2026"
+ },
+ "caring-for-vulnerable-people": {
+  "status": "verified",
+  "checked": "Nov 16, 2026"
+ },
+ "skills-progression": {
+  "status": "verified",
+  "checked": "Nov 16, 2026"
  }
 }
