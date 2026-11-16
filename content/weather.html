@@ -60,11 +60,11 @@
       <text x="230" y="158" class="t sm c">Altocumulus</text>
       <rect x="285" y="178" width="120" height="30" rx="6" class="fs s"/>
       <text x="345" y="158" class="t sm c">Altostratus</text>
-      <rect x="420" y="172" width="100" height="40" rx="10" class="fs s"/>
-      <line x1="440" y1="214" x2="436" y2="300" class="sa"/>
-      <line x1="462" y1="214" x2="458" y2="300" class="sa"/>
-      <line x1="484" y1="214" x2="480" y2="300" class="sa"/>
-      <line x1="506" y1="214" x2="502" y2="300" class="sa"/>
+      <rect x="420" y="172" width="100" height="100" rx="10" class="fs s"/>
+      <line x1="458" y1="276" x2="455" y2="343" class="sa"/>
+      <line x1="478" y1="276" x2="475" y2="343" class="sa"/>
+      <line x1="498" y1="276" x2="495" y2="343" class="sa"/>
+      <line x1="516" y1="276" x2="513" y2="343" class="sa"/>
       <text x="470" y="158" class="t sm c">Nimbostratus</text>
       <rect x="160" y="288" width="100" height="16" rx="8" class="fp s2"/>
       <text x="210" y="335" class="t sm c">Stratus</text>
@@ -79,7 +79,7 @@
       <path d="M556 345 L560 100 Q545 90 532 74 Q526 60 538 50 Q580 42 622 50 Q632 60 620 70 Q600 80 590 100 L588 345 Z" class="fs s"/>
       <text x="572" y="368" class="t sm c">Cumulonimbus</text>
     </svg>
-    <figcaption><strong>Figure 1.</strong> The ten basic clouds by height. Nimbostratus is a thick layer whose base is low, so rain reaches the ground from it. Cumulonimbus is the tall one, rooted low and topped with an anvil in the high band. Heights are approximate and the clouds are not to scale.</figcaption>
+    <figcaption><strong>Figure 1.</strong> The ten basic clouds by height. Nimbostratus is a thick layer that NOAA files as a middle cloud, but its base sinks into the low band as rain goes on, so it is drawn crossing the line. Cumulonimbus is the tall one, rooted low and topped with an anvil in the high band. Heights are approximate and the clouds are not to scale.</figcaption>
   </figure>
 
   <h3>What each cloud tends to signal</h3>
@@ -98,7 +98,7 @@
       <tr><td><strong>Cumulonimbus</strong></td><td>A huge tower with a dark base and a flat anvil top.</td><td>Thunderstorm. Expect heavy rain, lightning, strong gusts, and sometimes hail or tornadoes.</td></tr>
     </tbody>
   </table></div>
-  <p>NOAA files nimbostratus as middle-level, while one National Weather Service office files it as low. Do not worry about the box. Know what it brings.</p>
+  <p>NOAA files nimbostratus as a middle cloud. Its base keeps lowering while rain or snow falls, so it is often called a low cloud, and one National Weather Service office lists it that way. It can also reach up into the high band. Do not worry about the box. Know what it brings.</p>
 </section>
 
 <section id="fronts">
@@ -106,7 +106,7 @@
   <p>Much of the bad weather in the mid-latitudes comes with one of two fronts. They look different, and so does the warning you get.</p>
 
   <h3>Cold front: a short, hard change</h3>
-  <p>A cold front is where cold air pushes under warmer air and shoves it upward. Because cold air is heavy, the front is steep. Under similar winds a cold front travels roughly twice as fast as a warm front (aviation-weather reference), so you get less warning.</p>
+  <p>A cold front is where cold air pushes under warmer air and shoves it upward. Friction slows the cold air near the ground, so the front is steep and lifts warm air fast. Cold fronts usually move faster than warm fronts, so you get less warning.</p>
   <figure class="illus">
     <svg viewBox="0 0 640 300" role="img" aria-labelledby="weather-fig2-title">
       <title id="weather-fig2-title">Cross-section of a cold front: a steep wedge of cold air pushing under warm air and lifting it into a cumulonimbus cloud</title>
@@ -117,10 +117,10 @@
       </defs>
       <rect x="0" y="250" width="640" height="50" class="fe"/>
       <path d="M0 250 L380 250 Q355 175 300 130 Q200 95 0 90 Z" class="fw s"/>
-      <path d="M372 240 L375 105 Q360 85 372 70 Q385 55 400 62 L470 58 Q485 64 470 72 L405 76 Q412 100 410 240 Z" class="fs s"/>
-      <line x1="425" y1="205" x2="421" y2="245" class="sa"/>
-      <line x1="437" y1="205" x2="433" y2="245" class="sa"/>
-      <line x1="449" y1="205" x2="445" y2="245" class="sa"/>
+      <path d="M372 200 L375 105 Q360 85 372 70 Q385 55 400 62 L470 58 Q485 64 470 72 L405 76 Q412 100 410 200 Z" class="fs s"/>
+      <line x1="382" y1="204" x2="379" y2="246" class="sa"/>
+      <line x1="394" y1="204" x2="391" y2="246" class="sa"/>
+      <line x1="406" y1="204" x2="403" y2="246" class="sa"/>
       <line x1="600" y1="238" x2="570" y2="178" class="sa" marker-end="url(#weather-fig2-arrow)"/>
       <line x1="40" y1="28" x2="170" y2="28" class="s" marker-end="url(#weather-fig2-arrow)"/>
       <text x="180" y="32" class="t sm">Front moves this way</text>
@@ -129,20 +129,20 @@
       <text x="20" y="186" class="t sm">Cooler, gusty wind</text>
       <text x="440" y="140" class="t sm b">Warm, moist air</text>
       <text x="440" y="156" class="t sm">is forced upward</text>
-      <text x="460" y="236" class="t sm">Showers, gusts</text>
+      <text x="420" y="236" class="t sm">Showers, gusts at the front</text>
       <text x="320" y="276" class="t sm c">After the front passes: pressure rises, temperature falls, wind shifts</text>
     </svg>
     <figcaption><strong>Figure 2.</strong> A cold front in side view. Cold air pushes forward and under. Warm air is thrown upward ahead of it, which often builds a line of showers or thunderstorms right at the front. The slope is exaggerated.</figcaption>
   </figure>
   <ol class="steps">
-    <li><strong>Ahead of the front:</strong> warm, humid air. Winds are often from the southwest or west. Pressure is falling. Clouds build, and thunderstorms may form in a line ahead of the front.</li>
+    <li><strong>Ahead of the front:</strong> warm, humid air. Winds are often from the south or southwest. Pressure is falling. Clouds build, and thunderstorms may form in a line ahead of the front.</li>
     <li><strong>At the front:</strong> a band of heavy showers or thunderstorms, gusts, and a quick wind shift. Pressure bottoms out and begins to rise.</li>
-    <li><strong>Behind the front:</strong> winds turn northwest, temperature drops, pressure rises sharply, and the sky clears. The wind may stay gusty for hours.</li>
+    <li><strong>Behind the front:</strong> winds turn west or northwest, temperature drops, pressure rises sharply, and the sky clears. The wind may stay gusty for hours.</li>
   </ol>
-  <p>These wind directions are for the Northern Hemisphere, from NOAA's surface-map guide and an aviation-weather reference.</p>
+  <p>These wind directions are typical for North America and the Northern Hemisphere mid-latitudes (NOAA's surface-map guide; Ohio University and LibreTexts university texts). Local terrain can change them.</p>
 
   <h3>Warm front: a long, slow warning</h3>
-  <p>At a warm front, warm air slides up and over cooler air that is slow to give way. The slope is gentle, so clouds spread across a huge area. A warm front moves about half as fast as a cold front.</p>
+  <p>At a warm front, warm air slides up and over cooler air that is slow to give way. The slope is gentle, so clouds spread across a huge area. A warm front moves more slowly than a cold front.</p>
   <figure class="illus">
     <svg viewBox="0 0 640 300" role="img" aria-labelledby="weather-fig3-title">
       <title id="weather-fig3-title">Cross-section of a warm front: warm air sliding up a gentle slope over cold air, with cirrus, cirrostratus, altostratus, and nimbostratus layers in order</title>
@@ -251,12 +251,12 @@
       <rect x="205" y="304" width="108" height="16" class="fd s"/>
       <text x="345" y="316" class="t sm">Widespread damage</text>
       <text x="14" y="340" class="t sm">12 Hurricane</text>
-      <text x="152" y="340" class="t sm">72+</text>
+      <text x="152" y="340" class="t sm">73+</text>
       <rect x="205" y="328" width="125" height="16" class="fd s"/>
       <text x="345" y="340" class="t sm">Hurricane force. See Part 9 › Natural Disasters</text>
       <text x="14" y="362" class="t sm">Green: workable. Tan: tiring. Red: dangerous to be out in.</text>
     </svg>
-    <figcaption><strong>Figure 4.</strong> The Beaufort wind scale in miles per hour, with land signs. Bar length shows the upper end of each range. Multiply mph by 0.87 for knots, or by 1.6 for km/h. The color bands are this guide's advice, not part of the official scale.</figcaption>
+    <figcaption><strong>Figure 4.</strong> The Beaufort wind scale in miles per hour, with land signs. Bar length shows the upper end of each range. Force 12 starts at 64 knots (about 73 to 74 mph); sources round it slightly differently. Multiply mph by 0.87 for knots, or by 1.6 for km/h. The color bands are this guide's advice, not part of the official scale.</figcaption>
   </figure>
   <p>At Force 7, the National Weather Service says whole trees move and walking into the wind is hard. At Force 8, twigs break off and progress is slow. Do not travel across open ground, ridges, or water in a gale unless you must.</p>
 
@@ -313,7 +313,7 @@
 <section id="pressure">
   <h2 id="pressure-h">Barometric Pressure: Your Early Warning</h2>
   <p>A barometer measures air pressure. Pressure drops as a low or front approaches and rises as they leave. Two things matter: the level and the <strong>rate of change</strong>. The rate is the stronger clue.</p>
-  <p>Pressure comes in hectopascals (hPa, the same as millibars) or inches of mercury (inHg). One hPa is about 0.03 inHg. Sea-level pressure above 30.20 inHg (about 1,023 hPa) goes with clear, calm weather. Below about 29.80 inHg (about 1,009 hPa) goes with unsettled, wet weather.</p>
+  <p>Pressure comes in hectopascals (hPa, the same as millibars) or inches of mercury (inHg). One hPa is about 0.03 inHg. As a rough guide, sea-level pressure above about 30.20 inHg (1,023 hPa) tends to go with clear, calm weather, and below about 29.80 inHg (1,009 hPa) with unsettled, wet weather. These are loose rules from secondary sources, not hard cutoffs.</p>
   <figure class="illus">
     <svg viewBox="0 0 640 310" role="img" aria-labelledby="weather-fig6-title">
       <title id="weather-fig6-title">Line chart of five example pressure trends over 12 hours: rapid rise, steady, slow fall, fast fall, and very rapid fall</title>
@@ -345,10 +345,10 @@
       <text x="470" y="278" class="t sm c">now</text>
       <text x="320" y="302" class="t sm c">Example lines only. All five start at the same pressure, 12 hours ago.</text>
     </svg>
-    <figcaption><strong>Figure 6.</strong> How fast pressure changes matters more than where it sits. A steady line means no change is coming. A line that dives steeply means a strong system is near. The examples use the Met Office's shipping-forecast rates (see the table).</figcaption>
+    <figcaption><strong>Figure 6.</strong> How fast pressure changes matters more than where it sits. A steady line means no change is coming. A line that dives steeply means a strong system is near. The example slopes roughly match the Met Office rate bands in the table.</figcaption>
   </figure>
   <h3>Rates of change</h3>
-  <p>The Met Office's shipping forecast uses fixed words for the change over the last three hours. The last column is a rule of thumb from a forecasting reference. Sources do not agree exactly on cutoffs, so treat the timing as rough.</p>
+  <p>The Met Office's marine forecast glossary uses fixed words for the pressure change over the last three hours. The same bands apply to rising pressure ("rising slowly", "rising quickly", and so on). The last column is a rule of thumb from a secondary forecasting reference, not the Met Office. Sources do not agree exactly on cutoffs, so treat the timing as rough.</p>
   <div class="table-wrap"><table>
     <thead><tr><th>Change in 3 hours</th><th>Met Office wording</th><th>What it usually means</th></tr></thead>
     <tbody>
@@ -356,8 +356,8 @@
       <tr><td>Falls 1.6 to 3.5 hPa (0.05 to 0.10 inHg)</td><td>"Falling" (no extra word)</td><td>A system is on its way. Expect worse weather, likely within 12 to 24 hours. Keep watching the trend.</td></tr>
       <tr><td>Falls 3.6 to 6.0 hPa (0.11 to 0.18 inHg)</td><td>"Falling quickly"</td><td>An active storm is near. Rain or strong wind may arrive within 6 to 12 hours.</td></tr>
       <tr><td>Falls over 6.0 hPa (over 0.18 inHg)</td><td>"Falling very rapidly"</td><td>An intense system. Heavy wind and rain may come within hours. Take cover and secure gear now.</td></tr>
-      <tr><td>Steady (within about 0.5 hPa)</td><td>"Steady"</td><td>Present conditions likely last 12 hours or more.</td></tr>
-      <tr><td>Rises</td><td>"Rising"</td><td>Clearing and calming. A fast rise often follows a cold front, and the wind can stay gusty for a while.</td></tr>
+      <tr><td>Little or no change (under 0.1 hPa)</td><td>No term (below "slowly")</td><td>Present conditions likely last 12 hours or more.</td></tr>
+      <tr><td>Rises (same bands as falls)</td><td>"Rising slowly" to "rising very rapidly"</td><td>Clearing and calming. A fast rise often follows a cold front, and the wind can stay gusty for a while.</td></tr>
     </tbody>
   </table></div>
   <p>Yachting World adds that large pressure changes bring strong wind whether pressure is falling or rising. A rising barometer after a front does not mean the wind drops right away.</p>
@@ -392,15 +392,15 @@
       <line x1="122" y1="245" x2="122" y2="205" class="sa" marker-end="url(#weather-fig7-arrow)"/>
       <text x="107" y="100" class="t sm c">Towering cumulus</text>
       <text x="107" y="270" class="t sm c">Little or no rain</text>
-      <path d="M290 215 L292 100 Q270 92 245 88 Q238 76 255 70 Q290 62 320 60 Q355 62 390 70 Q405 78 398 88 Q372 94 350 100 L352 215 Z" class="fs s"/>
+      <path d="M282 215 L284 98 Q262 92 245 88 Q238 76 255 70 Q290 62 320 60 Q355 62 390 70 Q405 78 398 88 Q385 93 374 98 L376 215 Z" class="fs s"/>
       <line x1="302" y1="210" x2="302" y2="120" class="sa" marker-end="url(#weather-fig7-arrow)"/>
-      <line x1="340" y1="120" x2="340" y2="205" class="s" marker-end="url(#weather-fig7-arrow)"/>
-      <line x1="362" y1="150" x2="360" y2="240" class="sa dash"/>
-      <line x1="376" y1="150" x2="374" y2="240" class="sa dash"/>
-      <line x1="390" y1="150" x2="388" y2="240" class="sa dash"/>
+      <line x1="328" y1="120" x2="328" y2="205" class="s" marker-end="url(#weather-fig7-arrow)"/>
+      <line x1="344" y1="150" x2="343" y2="234" class="sa dash"/>
+      <line x1="356" y1="150" x2="355" y2="234" class="sa dash"/>
+      <line x1="368" y1="150" x2="367" y2="234" class="sa dash"/>
       <line x1="320" y1="238" x2="410" y2="238" class="s" marker-end="url(#weather-fig7-arrow)"/>
       <line x1="320" y1="238" x2="230" y2="238" class="s" marker-end="url(#weather-fig7-arrow)"/>
-      <text x="320" y="54" class="t sm c">Anvil</text>
+      <text x="320" y="84" class="t sm c">Anvil</text>
       <text x="320" y="270" class="t sm c">Gust front</text>
       <path d="M480 150 Q470 120 500 110 L500 100 Q470 95 455 85 Q452 72 470 68 Q530 60 590 68 Q610 76 600 86 Q570 96 560 100 Q575 120 570 150 Q540 160 480 150 Z" class="fs s"/>
       <line x1="508" y1="115" x2="508" y2="200" class="s" marker-end="url(#weather-fig7-arrow)"/>
@@ -512,11 +512,11 @@
   <div class="table-wrap"><table>
     <thead><tr><th>Saying</th><th>Verdict</th><th>Why</th></tr></thead>
     <tbody>
-      <tr><td>A ring around the moon (or sun) means rain or snow is coming.</td><td><strong>Works</strong></td><td>The ring is a halo. Light bends through ice crystals in thin high cloud, in a ring about 22 degrees across from the moon. The University of Alaska Geophysical Institute says such cloud normally comes a day or two ahead of a front.</td></tr>
+      <tr><td>A ring around the moon (or sun) means rain or snow is coming.</td><td><strong>Works</strong></td><td>The ring is a halo. Light bends through six-sided ice crystals in thin, high cirrus or cirrostratus. The University of Alaska Geophysical Institute says such cloud normally comes a day or two ahead of a front.</td></tr>
       <tr><td>Mares' tails (wispy cirrus) mean a change is coming.</td><td><strong>Works</strong></td><td>The National Weather Service says cirrus can signal an approaching warm front. In this guide's judgment, it is most useful when the wisps thicken and lower over several hours. Cirrus that stays high and unchanged means little.</td></tr>
-      <tr><td>Red sky at night, shepherd's delight. Red sky in morning, shepherd's warning.</td><td><strong>Partly</strong></td><td>The Met Office says it can work where weather mostly arrives from the west, as it does in the UK. A red sky at sunset points to high pressure moving in from the west, so the next day is usually dry. A red sky at sunrise points to high pressure that has already passed to the east, and a wet, windy low often follows. The reasoning breaks down where weather does not mainly arrive from the west. Treat it as a tendency, not a promise.</td></tr>
+      <tr><td>Red sky at night, shepherd's delight. Red sky in morning, shepherd's warning.</td><td><strong>Partly</strong></td><td>The Met Office and the Library of Congress both say it holds, within limits, where weather mostly arrives from the west, as in the mid-latitudes. A red sky at sunset points to high pressure moving in from the west, so the next day is usually dry. A red sky at sunrise points to high pressure that has already passed to the east, and a wet, windy low often follows. The reasoning breaks down where weather does not mainly arrive from the west. Treat it as a tendency, not a promise.</td></tr>
       <tr><td>You can smell rain coming.</td><td><strong>Partly</strong></td><td>The smell is real. Rain on dry ground gives off a scent called petrichor, and a storm can carry ozone. In this guide's judgment, it is a late warning. Rain is already close.</td></tr>
-      <tr><td>Pine cones close up when rain is near.</td><td><strong>Partly</strong></td><td>Cone scales open in dry air and close when it is damp. The cone tracks humidity, not rain. A weather news site calls the saying partly true but not something to count on.</td></tr>
+      <tr><td>Pine cones close up when rain is near.</td><td><strong>Partly</strong></td><td>The Met Office confirms that cone scales open in dry air and close when it is damp. The cone tracks humidity, not rain. A weather news site calls the saying partly true but not something to count on.</td></tr>
       <tr><td>Birds flying low means rain.</td><td><strong>Partly</strong></td><td>Swallows hunt flying insects. Before wet weather, insects are said to stay lower and the birds follow. A secondary source calls it a sign, not a guarantee. Wind, cool mornings, or feeding over water can also bring birds low.</td></tr>
       <tr><td>Cows lie down before rain.</td><td><strong>Myth</strong></td><td>The Met Office says there is no scientific backing. Cows lie down to rest. Its survey found 61 percent of UK adults believed it.</td></tr>
       <tr><td>The higher the pine cones, the harsher the winter.</td><td><strong>Myth</strong></td><td>Cone height depends on the tree species and how it spreads its seed. It has nothing to do with the coming winter.</td></tr>
@@ -543,12 +543,14 @@
     <li><a href="https://www.weather.gov/media/owlie/cloud_chart.pdf">Cloud chart</a> — National Weather Service</li>
     <li><a href="https://www.noaa.gov/jetstream/wxmaps">Surface Weather Maps: Highs, Lows, Fronts, and Weather (JetStream)</a> — NOAA / National Weather Service</li>
     <li><a href="https://weather.gov/lmk/basic-fronts">Basic Fronts</a> — National Weather Service, Louisville</li>
-    <li><a href="https://aviationweather.ws/041_Fronts.php">Fronts</a> — Aviation Weather (aviationweather.ws), a pilot-training reference (secondary source)</li>
+    <li><a href="https://people.ohio.edu/dyer/TPE/tpe_3e/weather_systems/warm_front_weather.html">Warm Front Weather (The Physical Environment)</a> — Ohio University (university textbook)</li>
+    <li><a href="https://geo.libretexts.org/Bookshelves/Geography_(Physical)/The_Physical_Environment_(Ritter)/08%3A_Weather_Systems/8.05%3A_Weather_and_Wave_Cyclones">Weather and Wave Cyclones</a> — LibreTexts (university textbook)</li>
     <li><a href="https://www.weather.gov/mfl/beaufort">Beaufort Wind Scale</a> — National Weather Service, Miami</li>
     <li><a href="https://weather.metoffice.gov.uk/guides/coast-and-sea/beaufort-scale">Beaufort wind force scale</a> — UK Met Office</li>
     <li><a href="https://www.nwcg.gov/publications/pms425-1/7-convective-winds">Convective Winds (sea and land breezes, slope and valley winds)</a> — National Wildfire Coordinating Group</li>
     <li><a href="https://www.aos.wisc.edu/~hopkins/online/cod/cod05t.htm">Concept for the Day: Air Pressure Changes</a> — University of Wisconsin, Atmospheric and Oceanic Sciences</li>
-    <li><a href="https://www.yachtingworld.com/weather/how-to-use-a-barometer-to-understand-weather-and-why-you-should-never-tap-it-163046">How to use a barometer to understand weather</a> — Yachting World (secondary source; quotes Met Office shipping-forecast terms)</li>
+    <li><a href="https://weather.metoffice.gov.uk/guides/coast-and-sea/glossary">Marine forecast glossary (pressure tendency terms)</a> — UK Met Office</li>
+    <li><a href="https://www.yachtingworld.com/weather/how-to-use-a-barometer-to-understand-weather-and-why-you-should-never-tap-it-163046">How to use a barometer to understand weather</a> — Yachting World (secondary source)</li>
     <li><a href="https://www.aguilmard.com/kb/local-forecasting-basics/">Local Forecasting Basics</a> — aguilmard.com (secondary source)</li>
     <li><a href="https://ropewiki.com/Barometric_Pressure">Barometric Pressure</a> — Ropewiki (secondary source)</li>
     <li><a href="https://outdoors.nordling.de/area/barometric-trend-analysis">Barometric trend analysis</a> — nordling.de outdoors reference (secondary source)</li>
@@ -559,6 +561,7 @@
     <li><a href="https://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/fog/types-of-fog">Types of fog</a> — UK Met Office</li>
     <li><a href="https://www.weather.gov/media/zhu/ZHU_Training_Page/fog_stuff/fog_guide/fog.pdf">Fog guide</a> — National Weather Service, Houston/Galveston</li>
     <li><a href="https://weather.metoffice.gov.uk/learn-about/weather/how-weather-works/red-sky-at-night">Red sky at night</a> — UK Met Office</li>
+    <li><a href="https://www.loc.gov/everyday-mysteries/meteorology-climatology/item/is-the-old-adage-red-sky-at-night-sailors-delight-red-sky-in-morning-sailors-warning-true-or-is-it-just-an-old-wives-tale/">Is the old adage "red sky at night" true?</a> — Library of Congress, Everyday Mysteries</li>
     <li><a href="https://www.metoffice.gov.uk/about-us/news-and-media/media-centre/weather-and-climate-news/2017/do-cows-really-lie-down-when-its-about-to-rain">Do cows really lie down when it's about to rain?</a> — UK Met Office</li>
     <li><a href="https://gi.alaska.edu/alaska-science-forum/rings-around-moon">Rings around the moon</a> — Geophysical Institute, University of Alaska Fairbanks (Alaska Science Forum)</li>
     <li><a href="https://www.discovermagazine.com/environment/old-wives-tales-to-predict-weather-whats-based-in-science-and-whats-just">Old wives' tales to predict weather: what's based in science and what's just folklore</a> — Discover Magazine (secondary source)</li>

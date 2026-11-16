@@ -96,5 +96,33 @@
  "hygiene-and-sanitation": {
   "status": "verified",
   "checked": "Nov 16, 2026"
+ },
+ "bites-stings-poisoning": {
+  "status": "verified",
+  "checked": "Nov 16, 2026"
+ },
+ "navigation-without-instruments": {
+  "status": "verified",
+  "checked": "Nov 16, 2026"
+ },
+ "survival-mindset-and-psychology": {
+  "status": "verified",
+  "checked": "Nov 16, 2026"
+ },
+ "kits-and-gear": {
+  "status": "verified",
+  "checked": "Nov 16, 2026"
+ },
+ "clothing-and-layering": {
+  "status": "verified",
+  "checked": "Nov 16, 2026"
+ },
+ "weather": {
+  "status": "verified",
+  "checked": "Nov 16, 2026"
+ },
+ "priorities": {
+  "status": "verified",
+  "checked": "Nov 16, 2026"
  }
 }

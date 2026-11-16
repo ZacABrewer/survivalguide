@@ -1,0 +1,38 @@
+# Verify report: bites-stings-poisoning (Part 7A)
+
+Checked: 2026-11-16. File: /home/claude/survival-site/content/bites-stings-poisoning.html
+Re-checked whole file from scratch (a previous verifier had partly edited it). WebSearch used: 1 of 10.
+
+## Changes made
+1. Pressure-immobilization steps: now "wrap firmly over the bite first, then wrap from fingers/toes up the whole limb" (old text said "start at the bite" and "from the fingers up" in one step, which contradicted itself). Bandage width now 4-6 in (10-15 cm). Source: ANZCOR via Ausmed; AVRU Melbourne; MJA 2013 (15 cm). Figure 2 label and caption changed to match.
+2. Sling: the conflict is now stated plainly (ANZCOR uses a sling; Melbourne AVRU warns a bent-elbow sling acts like a tourniquet), and a straight splint is advised. Sources: Ausmed/ANZCOR, AVRU.
+3. PI "use it for" list now names ANZCOR as limiting it to Australian snakes, funnel-web, blue-ringed octopus, and cone shell. Scorpion "do not" bullet was reworded to match, because the old claim that Australian services "list scorpions" was not supported.
+4. Snakebite "do not": suction and cutting now attributed to NOLS and WHO SEARO 2010 ("useless or harmful"). Tourniquet wording matches WHO ("tight (arterial) tourniquets are not recommended"). Removed the unsourced "studies show suction removes almost no venom". NSAID line attributed to CDC. Removed a duplicate "do not pick up the snake" bullet.
+5. Washing and position: put in one place under Regional differences. Added the WHO SEARO warning against rubbing, vigorous cleaning, or massage. Removed the duplicate position note from step 4.
+6. "Check a wrap": loosening a too-tight wrap on a long evacuation is now tied to the UN 2024 snakebite SOP (a secondary source).
+7. Poison Help: rewrote the note on the National Capital Poison Center (NCPC). It now says plainly that 1-800-222-1222 still works everywhere in the US. NCPC was one regional center. It stopped taking phone calls on March 31, 2025, and calls from DC, Northern Virginia, and Montgomery and Prince George's counties now go to neighboring centers with no break in service. The Maryland Poison Center has covered DC since April 1, 2025. Sources: poison.org press release, UMaryland news, HRSA, America's Poison Centers. Also added the number to the general poisoning step.
+8. Rabies: PEP is "nearly 100% effective if started after exposure and before symptoms" (the CDC's wording). The incubation paragraph was rewritten to stress urgency and remove repetition. Figure 7: "same day" changed to "right away" (WHO says "immediately"), and an overlapping label was fixed.
+9. Jellyfish: the claim that an AAFP review supports vinegar for the Hawaiian box jellyfish was wrong. AAFP says vinegar is commonly recommended there but no studies support it, and the text now says that. "Other non-tropical Australian jellyfish" was removed (not verified). Heat-vs-cold wording now matches AAFP: heat beat cold packs in trials.
+10. Hot-water immersion: MedlinePlus 002849 covers scorpionfish, not stingray. Text and source title corrected.
+11. Amatoxin onset table: now "6 hours or more (usually 6-24)". The text notes that CDC MMWR and CMAJ say 6-24 h and the Missouri Poison Center says 6-12 h, and advises treating any onset after 6 hours as possible amatoxin poisoning.
+12. CO: the list of sources was rewritten to match the CDC page, with CPSC added for camping heaters, lanterns, and stoves in tents. Removed "flameless chemical heaters / blocked chimneys / open the flue" (not on the opened pages). The appliance-servicing line now matches the CDC. The Figure 8 caption now names the attached-garage rule. A clipped label ("or gas oven for heat") was fixed.
+13. Ticks: mouthpart and squeeze steps now match the CDC. Removed the unsourced "doctor can give antibiotics after high-risk bite".
+14. Scorpion: changed "watch for 2-4 hours" to "watch closely, especially the first 2-4 hours", since MedlinePlus says symptoms can last for days.
+15. Spiders: cold-cloth step now attributed to the CDC/NIOSH page that was opened. Removed the specific hydrocortisone % (OTC label rule). Redback (no pressure bandage, cold pack) confirmed by the Australian Museum.
+16. Bee stinger: now "scrape, do not pinch or use tweezers" (ACAAI). Removed "speed matters most". ACAAI two-dose and seek-care lines confirmed.
+17. Figures. Fig 3: the widow's legs crossed the abdomen and now attach to the front body, the hourglass leader now points at the mark, and the recluse now has 6 eyes in 3 pairs. Fig 4: the tweezers now grip the tick's head at the skin, and the overlapping bottom labels were fixed. Fig 5: the legs no longer run under the red box, and the box text no longer reads "two or more systems = anaphylaxis". Breathing or throat trouble alone now counts. Fig 7: overlapping labels fixed. Fig 8: clipped label fixed.
+18. Trimmed repetition: lede, snake intro (removed the unverified line about children worsening faster), the anaphylaxis warning, the rabies warning, the final tip, and the duplicate "no folk antidotes" step. Body is about 6,300 words counting captions and tables. That is still over the spec, but all safety content was kept.
+19. Sources: added the poison.org closure press release and the UMaryland Poison Center item. Removed poison.org insect/spider (no longer cited). Renamed MedlinePlus 002849 to "Scorpion fish sting".
+
+## Verified (opened)
+WHO snakebite fact sheet (81,410-137,880 deaths/yr; up to 2 million envenomings in Asia; antivenom supply failing). CDC/NIOSH snakes (neutral position, wash, mark swelling, don't drive, no ice/NSAIDs). NOLS (heart level; PI for Australian elapids and NA coral snakes; not India; washing differs by region; fluids, warmth, legs up). WHO SEARO 2010 (consider PI/pressure pad if equipment and skills exist, unless an elapid bite can be excluded; no tight tourniquets; avoid incision, rubbing, and vigorous cleaning). UN SOP 2024 (PI for kraits, purely neurotoxic cobras, and coral snakes on long transport; not for many cobras or vipers). Ausmed/ANZCOR. AVRU. MJA (15 cm; more than 4 h unlikely to help). MedlinePlus snake, anaphylaxis, scorpion, scorpionfish. CDC/NIOSH spiders. Australian Prescriber spider and marine. Australian Museum. CDC ticks (removal, 16 diseases, tick paralysis 24 h). CDC Lyme signs. ACAAI. AAFP jellyfish. WHO rabies (44,203 deaths; up to 99% dogs; 15 min wash; PEP parts; incubation 1 wk-1 yr). CDC rabies prevention and about (≥7/10 US deaths from bats). CDC MMWR amatoxin (6-24 h; 24-48 h false recovery; 3-5 d organ failure; death 4-9 d). CMAJ (no proven drug). Missouri PC. CDC CO (20 ft; detectors; 5 yr). CPSC camping. EPA (CO lingers for hours). poison.org first aid (15 min skin; 15-20 min eye; no ipecac). APC, HRSA (24/7, free, local routing, territories, interpreters).
+
+## Still uncertain
+- ANZCOR pages could not be opened (fetch failed). ANZCOR content comes via Ausmed, a reputable secondary source, and is flagged as such.
+- Pressure immobilization for non-Australian elapids: guidance truly differs (WHO SEARO "consider", UN SOP "suggested on long transport", India no). The text says so and gives the conservative option.
+- HRSA's About page gives the number of interpreter languages inconsistently (161 vs over 100), so the text just says "interpreters are available".
+- Not re-opened by me but cited by the writer: WHO snakes gallery (Papuan taipan near 100% fatal), MSD table, PMC review, NSW, WHO CCHF, WHO poisons centres, CDC Lyme about, NTNU.
+- Cone snail first aid outside Australia, Phoneutria, and non-US tick diseases are flagged in the text as not verified.
+- "Do not use urine or alcohol" on jellyfish stings is conservative and not tied to an opened source.
+
+VERDICT: PASS WITH NOTES
