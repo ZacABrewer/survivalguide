@@ -136,5 +136,13 @@
  "time-and-seasons": {
   "status": "verified",
   "checked": "Nov 16, 2026"
+ },
+ "natural-disasters": {
+  "status": "verified",
+  "checked": "Nov 16, 2026"
+ },
+ "communication": {
+  "status": "verified",
+  "checked": "Nov 16, 2026"
  }
 }
